@@ -1,5 +1,6 @@
 <template>
-  <v-card class="mx-auto" min-width="600" tile>
+<v-col cols="12">
+  <v-card class="mx-auto"  tile>
     <v-list-item v-for="item in items" :key="item.title"  @click="onclick(item)">
       <v-list-item-content>
         <v-list-item-title v-text="item.name"></v-list-item-title>
@@ -7,6 +8,7 @@
       </v-list-item-content>
     </v-list-item>
   </v-card>
+ </v-col>
 </template>
 
 

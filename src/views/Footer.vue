@@ -5,7 +5,7 @@
         <v-icon>mdi-history</v-icon>
       </v-btn>
 
-      <v-btn value="record">
+      <v-btn to="/record" value="record">
         <span>My Record</span>
         <v-icon>mdi-heart</v-icon>
       </v-btn>

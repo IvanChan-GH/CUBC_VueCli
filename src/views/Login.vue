@@ -37,7 +37,10 @@ export default {
         body: new FormData(document.getElementById("form"))
       });
       var data = await response.json();
+     
       if (data.uid) {
+        this.$cookie.set('uid', data.uid, 1);
+        alert(this.$cookie.get('uid'));
         this.$router.push("/home");
       } else {
         // prompt error

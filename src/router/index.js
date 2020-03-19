@@ -5,7 +5,7 @@ import Login from "../views/Login.vue";
 // import adminFooter from "../views/adminFooter.vue";
 import Footer from "../views/Footer.vue";
 import boardgame_list from "../views/Boardgame_list.vue";
-
+import record from "../views/Record.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,7 +32,17 @@ const routes = [
       footer: Footer,
     }
   },
+
+  {
+    path: "/record",
+    name: "Record",
+    components: {
+      default: record,
+      footer: Footer,
+    }
+  },
 ];
+
 
 const router = new VueRouter({
   mode: "history",
