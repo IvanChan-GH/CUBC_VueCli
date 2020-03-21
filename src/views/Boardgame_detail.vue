@@ -91,6 +91,7 @@ export default {
     if (response.ok) {
       var data = await response.json();
       this.boardgame = data.boardgames;
+      alert()
     } else {
       alert("boardgame not found");
     }

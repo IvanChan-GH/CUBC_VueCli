@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import Login from '../views/Login.vue';
-// import adminFooter from "../views/adminFooter.vue";
+import Login from  '../views/Login.vue';
 import Footer from '../views/Footer.vue';
 import boardgame_list from '../views/Boardgame_list.vue';
 import book_list from '../views/Book_list.vue';
@@ -10,6 +9,8 @@ import material_list from '../views/Material_list.vue'
 import present_list from '../views/Present_list.vue'
 import boardgame_detail from '../views/Boardgame_detail.vue';
 import record from '../views/Record.vue';
+import adminFooter from '../views/adminFooter.vue';
+
 Vue.use (VueRouter);
 
 const routes = [
@@ -26,6 +27,14 @@ const routes = [
     components: {
       default: Home,
       footer: Footer,
+    },
+  },
+  {
+    path: '/adminhome',
+    name: 'Home',
+    components: {
+      default: Home,
+      footer: adminFooter,
     },
   },
   {

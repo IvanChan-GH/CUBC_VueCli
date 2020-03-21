@@ -2,7 +2,7 @@
   <v-container>
       <v-row dense>
         <v-col cols="12">
-      <v-card class="mb-3" color="#385F73" dark v-for="(boardgame, id) in boardgames" :key="id" @click="onclick(boardgame)">
+        <v-card class="mb-3" color="#385F73" dark v-for="(boardgame, id) in boardgames" :key="id" @click="onclick(boardgame)">
         <v-card-title class="headline">{{boardgame.name }}</v-card-title>
       </v-card>
     </v-col>
@@ -40,7 +40,7 @@ export default {
       //   this.presents = data.presents;
       //   this.materials = data.materials;
 
-      // alert( this.boardgames);
+      alert( JSON.stringify(this.boardgames));
       // alert(JSON.stringify(this.boardgames));
       // alert(JSON.stringify(this.books));
       // alert(JSON.stringify(this.presents));

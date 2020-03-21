@@ -1,22 +1,22 @@
 <template>
     <v-bottom-navigation fixed v-model="bottomNav">
       <v-btn to="/home" value="home">
-        <span>Home</span>
+        <span>adminHome</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
       <v-btn to="/record" value="record">
-        <span>My Record</span>
+        <span>adminHome</span>
         <v-icon>mdi-history</v-icon>
       </v-btn>
 
       <v-btn to="/" value="nearby">
-        <span>Scan</span>
+        <span>adminHome</span>
         <v-icon>mdi-overscan</v-icon>
       </v-btn>
 
        <v-btn to="/" value="nearby">
-        <span>Search</span>
+        <span>adminHome</span>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
