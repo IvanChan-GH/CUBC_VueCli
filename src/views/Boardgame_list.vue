@@ -1,27 +1,30 @@
 <template>
   <v-container>
-    <v-row>
-      <div>
-        <ul>
-          <li v-for="(boardgame, id) in boardgames" :key="id"
-          >id:{{boardgame.id }}, Boardgame name:{{boardgame.name }}</li>
-        </ul>
-      </div>
-    </v-row>
-    <br>
+      <v-row dense>
+        <v-col cols="12">
+      <v-card class="mb-3" color="#385F73" dark v-for="(boardgame, id) in boardgames" :key="id" @click="onclick(boardgame)">
+        <v-card-title class="headline">{{boardgame.name }}</v-card-title>
+      </v-card>
+    </v-col>
+      </v-row>
   </v-container>
 </template>
 
 <script>
+// import boardgame_detail from "../views/list/Boardgame_list.vue";
 export default {
-  methods: {},
+  methods: {
+    onclick: async function(item) {
+     this.$router.push("/boardgame_detail/" + item.id);
+    }
+  },
 
   data() {
     return {
-      boardgames: [],
-    //   books: [],
-    //   presents: [],
-    //   materials: []
+      boardgames: []
+      //   books: [],
+      //   presents: [],
+      //   materials: []
     };
   },
   async mounted() {
@@ -33,9 +36,9 @@ export default {
     if (response.ok) {
       var data = await response.json();
       this.boardgames = data.boardgames;
-    //   this.books = data.books;
-    //   this.presents = data.presents;
-    //   this.materials = data.materials;
+      //   this.books = data.books;
+      //   this.presents = data.presents;
+      //   this.materials = data.materials;
 
       // alert( this.boardgames);
       // alert(JSON.stringify(this.boardgames));

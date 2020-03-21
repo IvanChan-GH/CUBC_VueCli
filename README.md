@@ -1,4 +1,4 @@
-# comp4117lab3
+# CUBC
 
 ## Project setup
 ```
