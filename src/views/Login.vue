@@ -38,6 +38,7 @@ export default {
       });
       var data = await response.json();
       alert(JSON.stringify(data))
+      
       if (data.role=="admin") {
         this.$cookie.set('uid', data.uid, 1);
         alert(this.$cookie.get('uid'));
