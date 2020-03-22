@@ -16,6 +16,9 @@ import adminFooter from '../views/adminFooter.vue';
 import staff_list from '../views/staff_list.vue';
 import staff_detail from '../views/staff_detail.vue';
 import manage from '../views/Manage.vue';
+import item_create from '../views/Item_create.vue';
+import boardgame_create from '../views/Boardgame_create.vue';
+
 
 Vue.use (VueRouter);
 
@@ -138,6 +141,22 @@ const routes = [
     name: 'staffdetail',
     components: {
       default: staff_detail,
+      footer: adminFooter,
+    },
+  },
+  {
+    path: '/item_create',
+    name: 'item_create',
+    components: {
+      default: item_create,
+      footer: adminFooter,
+    },
+  },
+  {
+    path: '/boardgame_create',
+    name: 'boardgame_create',
+    components: {
+      default: boardgame_create,
       footer: adminFooter,
     },
   },

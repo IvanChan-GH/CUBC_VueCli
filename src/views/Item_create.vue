@@ -34,41 +34,29 @@
       return {
         items: [
           {
-            name: "Item create",
+            name: "Boardgame create",
             imgurl:
               "https://cw1.tw/CW/images/article/201707/article-597aed732605f.jpg",
-            path: "/item_create"
+            path: "/boardgame_create"
           },
           {
-            name: "Item delete",
+            name: "Book create",
             imgurl:
               "https://www.phocuswire.com/uploadedImages/Articles/Opinion/2019/September/broken-marketing-funnel.jpg?origwidth=800&origheight=400&origmode=crop&Anchor=MiddleCenter&width=600&height=300&scale=both&mode=crop",
             path: "/"
           },
           {
-            name: "Item edit",
+            name: "Activity Material create",
             imgurl:
               "https://cdn.searchenginejournal.com/wp-content/uploads/2016/07/update-your-content.jpg",
             path: "/"
           },
           {
-            name: "Staff create",
+            name: "Present create",
             imgurl:
               "https://www.tourismtribe.com/wp-content/uploads/image00-3-768x576.png",
             path: "/"
           },
-          {
-            name: "Staff delete",
-            imgurl:
-              "https://www.tourismtribe.com/wp-content/uploads/image00-3-768x576.png",
-            path: "/"
-          },
-          {
-            name: "Staff edit",
-            imgurl:
-              "https://www.tourismtribe.com/wp-content/uploads/image00-3-768x576.png",
-            path: "/"
-          }
         ]
       };
     }
