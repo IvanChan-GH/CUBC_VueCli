@@ -14,6 +14,7 @@ import myborrowlist from '../views/Myborrowlist.vue';
 import mybookinglist from '../views/Mybookinglist.vue';
 import adminFooter from '../views/adminFooter.vue';
 import staff_list from '../views/staff_list.vue';
+import staff_detail from '../views/staff_detail.vue';
 
 Vue.use (VueRouter);
 
@@ -123,6 +124,15 @@ const routes = [
       footer: adminFooter,
     },
   },
+  {
+    path: '/staffdetail/:id',
+    name: 'staffdetail',
+    components: {
+      default: staff_detail,
+      footer: adminFooter,
+    },
+  },
+
 ];
 
 const router = new VueRouter ({

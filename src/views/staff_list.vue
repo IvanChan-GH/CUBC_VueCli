@@ -21,7 +21,7 @@
   export default {
     methods: {
       onclick: async function(staff) {
-        this.$router.push("/stafflist/" + staff.id);
+        this.$router.push("/staffdetail/" + staff.id);
       }
     },
   
