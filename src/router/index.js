@@ -7,8 +7,11 @@ import boardgame_list from '../views/Boardgame_list.vue';
 import book_list from '../views/Book_list.vue';
 import material_list from '../views/Material_list.vue'
 import present_list from '../views/Present_list.vue'
-import boardgame_detail from '../views/Boardgame_detail.vue';
-import record from '../views/Record.vue';
+import boardgame_detail_addbooking from '../views/Boardgame_detail_addbooking';
+import boardgame_detail_removebooking from '../views/Boardgame_detail_removebooking';
+import myrecord from '../views/MyRecord.vue';
+import myborrowlist from '../views/Myborrowlist.vue';
+import mybookinglist from '../views/Mybookinglist.vue';
 import adminFooter from '../views/adminFooter.vue';
 
 Vue.use (VueRouter);
@@ -31,7 +34,7 @@ const routes = [
   },
   {
     path: '/adminhome',
-    name: 'Home',
+    name: 'adminhome',
     components: {
       default: Home,
       footer: adminFooter,
@@ -70,19 +73,44 @@ const routes = [
     },
   },
   {
-    path: '/boardgame_detail/:id',
+    path: '/boardgame_detail_addbooking/:id',
     props: true,
-    name: 'boardgame_detail',
+    name: 'boardgame_detail_addbooking',
     components: {
-      default: boardgame_detail,
+      default: boardgame_detail_addbooking,
       footer: Footer,
     },
   },
   {
-    path: '/record',
-    name: 'Record',
+    path: '/boardgame_detail_removebooking/:id',
+    props: true,
+    name: 'boardgame_detail_removebooking',
     components: {
-      default: record,
+      default: boardgame_detail_removebooking,
+      footer: Footer,
+    },
+  },
+  {
+    path: '/myrecord',
+    name: 'myrecord',
+    components: {
+      default: myrecord,
+      footer: Footer,
+    },
+  },
+  {
+    path: '/myborrowlist',
+    name: 'myborrowlist',
+    components: {
+      default: myborrowlist,
+      footer: Footer,
+    },
+  },
+  {
+    path: '/mybookinglist',
+    name: 'mybookinglist',
+    components: {
+      default: mybookinglist,
       footer: Footer,
     },
   },
