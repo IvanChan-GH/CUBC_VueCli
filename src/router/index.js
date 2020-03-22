@@ -10,6 +10,7 @@ import present_list from '../views/Present_list.vue'
 import boardgame_detail from '../views/Boardgame_detail.vue';
 import record from '../views/Record.vue';
 import adminFooter from '../views/adminFooter.vue';
+import staff_list from '../views/staff_list.vue';
 
 Vue.use (VueRouter);
 
@@ -84,6 +85,14 @@ const routes = [
     components: {
       default: record,
       footer: Footer,
+    },
+  },
+  {
+    path: '/staff_list',
+    name: 'staff_list',
+    components: {
+      default: staff_list,
+      footer: adminFooter,
     },
   },
 ];
