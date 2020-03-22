@@ -2,9 +2,11 @@
   <v-form id="form">
     <v-col cols="12">
       <v-card class="mx-auto">
-        <v-img class="white--text align-end" height="200px" :src="boardgame.avatar">
+        <v-row>
+        <v-img class="white--text align-end" height="200px" width="100px" :src="boardgame.avatar">
           <v-card-title>{{boardgame.name}}</v-card-title>
         </v-img>
+      </v-row>
 
         <v-card-subtitle class="pb-0">{{boardgame.type}}</v-card-subtitle>
 

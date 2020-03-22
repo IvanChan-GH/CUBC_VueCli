@@ -20,6 +20,7 @@ import item_create from '../views/Item_create.vue';
 import boardgame_create from '../views/Boardgame_create.vue';
 
 
+
 Vue.use (VueRouter);
 
 const routes = [
@@ -160,6 +161,7 @@ const routes = [
       footer: adminFooter,
     },
   },
+  
 
 ];
 
