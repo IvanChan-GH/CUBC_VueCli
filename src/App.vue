@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background: url(https://i.pinimg.com/originals/e3/03/64/e3036456ed22a53d696853f0347cbe3f.jpg)">
 
     <router-view name="default"></router-view>
 

@@ -1,11 +1,11 @@
 <template>
-    <v-bottom-navigation fixed v-model="bottomNav">
+    <v-bottom-navigation fixed v-model="bottomNav" color="purple lighten-1">
       <v-btn to="/home" value="home">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn to="/record" value="record">
+      <v-btn to="/myrecord" value="record">
         <span>My Record</span>
         <v-icon>mdi-history</v-icon>
       </v-btn>

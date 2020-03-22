@@ -37,14 +37,16 @@ export default {
         body: new FormData(document.getElementById("form"))
       });
       var data = await response.json();
-      alert(JSON.stringify(data))
+      // alert(JSON.stringify(data))
       
       if (data.role=="admin") {
         this.$cookie.set('uid', data.uid, 1);
-        alert(this.$cookie.get('uid'));
         this.$router.push("/adminhome");
-      } else {
+      } else if(data.role=="staff"){
+        this.$cookie.set('uid', data.uid, 1);     
         this.$router.push("/home");
+      }else{
+        alert(data.message)
       }
       
 
