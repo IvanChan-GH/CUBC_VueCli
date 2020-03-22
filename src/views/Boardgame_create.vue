@@ -42,7 +42,7 @@
                 label="Remark"
                 hint="Please write important attention if necessary"
                 ></v-text-field>
-
+                
                 <v-file-input
                 accept="image/*"
                 label="Avatar"
@@ -106,19 +106,20 @@
         remarkRules:[
           v => (v.length <= 64) || 'Remark must be less than 64 characters',
         ],
+        avatar: null,
         lazy: false,
       }),
   
       methods: {
         async submit() {
-            console.log('submit');
+            alert('submit');
             var response = await fetch("/boardgame/create", {
                 method: "POST",
                 credentials: "same-origin",
                 body: new FormData(document.getElementById("boardgameCreate"))
             });
             var data = await response.json();
-            alert(JSON.stringify(data));
+            alert(JSON.stringify(data));   
         },
         validate () {
           this.$refs.form.validate()
