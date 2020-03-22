@@ -15,6 +15,7 @@ import mybookinglist from '../views/Mybookinglist.vue';
 import adminFooter from '../views/adminFooter.vue';
 import staff_list from '../views/staff_list.vue';
 import staff_detail from '../views/staff_detail.vue';
+import manage from '../views/Manage.vue';
 
 Vue.use (VueRouter);
 
@@ -39,6 +40,14 @@ const routes = [
     name: 'adminhome',
     components: {
       default: Home,
+      footer: adminFooter,
+    },
+  },
+  {
+    path: '/manage',
+    name: 'manage',
+    components: {
+      default: manage,
       footer: adminFooter,
     },
   },

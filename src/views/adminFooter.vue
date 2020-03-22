@@ -1,25 +1,30 @@
 <template>
     <v-bottom-navigation fixed v-model="bottomNav">
-      <v-btn to="/home" value="home">
-        <span>adminHome</span>
+      <v-btn to="/adminhome" value="home">
+        <span>AdminHome</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
+      <v-btn to="/manage" value="nearby">
+        <span>Manage</span>
+        <v-icon>mdi-account-multiple</v-icon>
+      </v-btn>
+
       <v-btn to="/record" value="record">
-        <span>adminHome</span>
+        <span>History</span>
         <v-icon>mdi-history</v-icon>
       </v-btn>
 
       <v-btn to="/" value="nearby">
-        <span>adminHome</span>
+        <span>Scan</span>
         <v-icon>mdi-overscan</v-icon>
       </v-btn>
 
        <v-btn to="/" value="nearby">
-        <span>adminHome</span>
+        <span>Search</span>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
-
+     
       <v-btn to="/" >
         <span>Logout</span>
         <v-icon>mdi-subdirectory-arrow-left</v-icon>
