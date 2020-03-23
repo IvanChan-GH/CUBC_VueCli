@@ -67,7 +67,7 @@
             name: "Staff edit",
             imgurl:
               "https://www.tourismtribe.com/wp-content/uploads/image00-3-768x576.png",
-            path: "/"
+            path: "/staff_list/"
           }
         ]
       };

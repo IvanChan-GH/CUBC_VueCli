@@ -35,17 +35,17 @@
                     <v-container>
                       <v-row>
                         <v-col cols="12" sm="6" md="4">
-                          <v-text-field label="Staff Name"></v-text-field>
+                          <v-text-field label="Staff Name" v-model="user.username"></v-text-field>
                         </v-col>
                         <v-col cols="12" sm="6" md="4">
-                          <v-text-field label="Staff ID"></v-text-field>
+                          <v-text-field label="Staff ID" v-model="user.staffID"></v-text-field>
                         </v-col>
                         
                         <v-col cols="12">
-                          <v-text-field label="Email" ></v-text-field>
+                          <v-text-field label="Email" v-model="user.email"></v-text-field>
                         </v-col>
                         <v-col cols="12">
-                          <v-text-field label="Telephone number"></v-text-field>
+                          <v-text-field label="Telephone number" v-model="user.tel"></v-text-field>
                         </v-col>
                       </v-row>
                     </v-container>
@@ -86,8 +86,11 @@
         {
           method: "POST",
           credentials: "same-origin",
-          body: new FormData(document.getElementById("form")) 
-
+          
+          headers: {
+              "Content-Type": "application/json"        
+         },
+        body:JSON.stringify(this.user)
         }
       );
       if (response.ok) {
@@ -104,7 +107,7 @@
     data() {
       return {
         user: {},
-        // dialog: false
+        dialog: false
       };
     },
     async mounted() {
